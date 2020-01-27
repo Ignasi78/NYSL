@@ -1,0 +1,727 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid brown;  */
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+body {
+  background: url("../img/fondo-cesped.jpg");
+  background-attachment: fixed;
+}
+
+#global {
+  width: 65%;
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#logo {
+  /* line-height: 75px; */
+  background: #235e3d;
+  width: 100%; /*  385   */
+  height: 80px;
+}
+
+#logo img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+#logo a {
+  position: relative;
+  top: 5px;
+
+  font-family: Verdana, Arial;
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+}
+
+#menu {
+  font-family: Helvetica, Arial;
+  background: #333;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* elements que siguin de tipus llista un-ordered list */
+#menu ul {
+  line-height: 46px;
+  list-style: none;
+}
+
+/* elements que apareguin dins una llista un-ordered list */
+#menu ul li {
+  height: 46px;
+  display: inline-block;
+  transition: all 300ms;
+}
+
+#menu ul li:hover {
+  background: #235e3d;
+}
+
+/* esta clase la creamos solamente para dejar iluminado el botón activo HOME o ABOUT o CONTACT */
+.active {
+  background: #235e3d;
+}
+
+/* per tots els elements a de dins menu un-ordered list fariem  #menu ul li a  */
+
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#form-carta {
+  /* border: 1px solid blue;	 */
+  background: no-repeat;
+  background: white;
+  color: #235e3d;
+
+  font-family: Helvetica, Arial;
+  text-align: justify;
+  font-size: 15px;
+
+  position: relative;
+  top: 0px;
+  left: 13px;
+  width: 35%;
+  height: 230px;
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 25px gray;
+}
+
+#form-carta .banner-carta {
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  position: relative;
+  left: 0px;
+  top: -34px;
+  background: image("./img/carta_sobre_blanco.png");
+}
+
+#formulario {
+  /* border: 1px solid blue;	 */
+  /* background: no-repeat;    */
+  background: #235e3d;
+  color: white;
+
+  font-family: Helvetica, Arial;
+  text-align: justify;
+  font-size: 15px;
+
+  position: relative;
+  top: 0px;
+  left: 5px;
+  width: 98%;
+  height: 1020px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 25px gray;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+#formulario label {
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#formulario .banner-carta {
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  position: relative;
+  left: 0px;
+  top: -3px;
+  background: image("./img/carta_sobre_blanco.png");
+}
+
+#formulario .rellenardatos {
+  /* border: 1px solid green; */
+  position: relative;
+  top: 0px;
+  left: 220px;
+  color: #235e3d;
+}
+
+#formulario span {
+  color: white;
+  position: relative;
+  /* left: -100px; */
+  margin-left: 3px;
+}
+
+.contact-us {
+  /* border: 1px solid green; */
+  position: relative;
+  top: -250px;
+  left: 20px;
+  color: #235e3d;
+}
+
+.contact-us h3 {
+  padding-bottom: 120px;
+  font-style: italic;
+}
+
+.contact-us span {
+  padding-bottom: 2px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.contact-us .kindly {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+#pelotaenviar:hover {
+  cursor: pointer;
+}
+
+#posts {
+  padding: 30px;
+  width: 60%;
+  float: left;
+  font-family: Helvetica, Arial;
+  /* border: 1px solid blue;  */
+  box-shadow: 0px 0px 25px gray;
+}
+
+#posts h3 {
+  color: #235e3d;
+}
+
+#posts p {
+  text-align: justify;
+  font-family: "Arial Narrow";
+}
+
+.post {
+  padding: 10px;
+}
+.post h2 {
+  font-size: 30px;
+  color: #235e3d;
+  padding-bottom: 20px;
+}
+
+/*para la firma del Pep Guardiola*/
+.post .sign {
+  display: block;
+  color: gray;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.post p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+#lista {
+  margin-left: 30px;
+}
+
+#slider {
+  width: 420px;
+  height: 315px;
+}
+
+#slider iframe {
+  width: 875px;
+  height: 315px;
+}
+
+#slider .banner {
+  width: 875px;
+  height: 300px;
+}
+
+#lista li {
+  color: #235e3d;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button-more {
+  font-size: 14px;
+  text-align: center;
+  /* para que actue como un bloque display:block;   */
+  display: block;
+  padding: 15px;
+  background: #235e3d;
+  color: white;
+  text-decoration: none;
+  margin-top: 60px;
+  width: 140px;
+  float: auto;
+  cursor: pointer;
+  border: outset;
+}
+
+.button-more:hover {
+  border: double;
+  background-color: white;
+  color: green;
+}
+
+/*  aside =========================================================*/
+.sidebar {
+  font-family: Helvetica, Arial;
+  width: 31%;
+  right: 0px;
+  float: right;
+}
+
+.sidebar h4 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 10px;
+  color: #333;
+  background-color: #235e3d;
+}
+
+.sidebar h4 span {
+  background-color: white;
+}
+
+#fotoabout {
+  margin-left: 10px;
+  float: right;
+  box-shadow: 0px 0px 25px gray;
+}
+
+.sidebar img {
+  width: 100%;
+  height: 330px;
+}
+
+.sidebar p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.sidebar .sign {
+  display: block;
+  color: gray;
+  margin-top: 5px;
+  font-style: italic;
+  text-align: right;
+}
+
+footer {
+  font-family: Helvetica, Arial;
+  color: white;
+  height: 47px;
+  background: rgba(51, 51, 51, 0.7);
+  margin: 0px auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  line-height: 47px;
+}
+
+.taula {
+  width: 80;
+}
+
+.taula th {
+  color: white;
+  /* background-color: #235E3D;  sino no aparecen los colores gradientes */
+  font-family: "Arial Narrow";
+}
+
+.taula td {
+  /* background-color: white; */
+  color: 235e3d;
+}
+
+#posts-info {
+  padding: 30px;
+  width: 92%;
+  float: left;
+  font-family: Helvetica, Arial;
+  /* border: 1px solid blue;  */
+  box-shadow: 0px 0px 25px gray;
+}
+
+#posts-info h3 {
+  color: #235e3d;
+}
+
+#posts-info h2 {
+  color: #235e3d;
+  font-size: 30px;
+}
+
+#posts-info p {
+  text-align: justify;
+  font-family: "Arial Narrow";
+}
+
+.regles dt {
+  font-family: Helvetica, Arial;
+  color: #235e3d;
+  text-transform: uppercase;
+}
+
+.regles dd {
+  font-family: "arial";
+  color: black;
+  list-style-type: square;
+  padding-left: 40px;
+  text-align: justify;
+  padding-bottom: 1px;
+}
+
+.regles li {
+  padding-bottom: 20px;
+}
+
+.regles ol li {
+  /*  padding-left: 40px;  */
+}
+
+.regles dl ol ol ul {
+  list-style-type: upper-alpha;
+}
+
+.sub-o-list {
+  list-style-type: lower-alpha;
+  padding-left: 40px;
+  padding-bottom: 0px;
+}
+
+.sub-o-list li {
+  padding-bottom: 0px;
+}
+
+.sub-on-list {
+  list-style-type: initial=1;
+  padding-left: 40px;
+  padding-bottom: 0px;
+}
+
+.sub-on-list li {
+  padding-bottom: 0px;
+}
+
+.sub-u-list-cuadrado {
+  /*   list-style-type: square;  */
+  padding-left: 40px;
+  padding-bottom: 0px;
+}
+
+.sub-u-list-cuadrado li {
+  list-style-type: square;
+  color: red;
+  padding-bottom: 0px;
+}
+
+.sub-u-list-redondo {
+  padding-left: 40px;
+  padding-bottom: 0px;
+}
+
+.sub-u-list-redondo li {
+  padding-bottom: 0px;
+  list-style-type: circle;
+  color: blue;
+}
+
+.regles ul {
+  list-style-type: square;
+}
+
+.taula {
+  width: 100%;
+  position: relative;
+  padding: 2px;
+}
+
+.taula-caption {
+  text-align: left;
+  padding-left: 10px;
+  font-style: italic;
+  font-size: larger;
+}
+
+.taula-span {
+  font-size: x-small;
+  text-decoration-line: underline;
+  text-underline-position: below;
+}
+
+.taula-span-2 {
+  position: relative;
+  left: 350px;
+  font-size: x-small;
+  text-decoration-line: none;
+}
+
+.taula-col1 {
+  align-content: center;
+}
+
+thead {
+  line-height: 35px;
+  /* color: #648880; */
+  background: linear-gradient(#235e3d, rgb(3, 139, 76));
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+th:first-child {
+  text-align: center;
+  border-top-left-radius: 40px;
+  /* border-bottom-left-radius: 40px; */
+}
+
+th:last-child {
+  border-top-right-radius: 40px;
+  /* border-bottom-right-radius: 40px;  */
+}
+
+tbody tr:nth-child(even) {
+  background: #c5cfb5;
+}
+
+.taula-col1-items {
+  color: red;
+  text-align: center;
+}
+
+tbody tr {
+  line-height: 27px;
+}
+
+/* ------------ */
+
+/* tfoot>tr>td:first-child{
+	color: blueviolet;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}  */
+
+/* tfoot>tr>td:first-child{
+	color: blueviolet;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}  */
+
+.taula-peu .mail {
+  text-align: right;
+}
+
+.taula-peu tr td {
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.taula-peu span {
+  font-weight: 800;
+  color: #235e3d;
+}
+
+.north {
+  border-color: indigo;
+}
+
+.north h2 {
+  color: #235e3d;
+}
+
+.north h4 {
+  padding-bottom: 10px;
+}
+
+.adreca {
+  padding-left: 10px;
+  width: 280px;
+  height: 120px;
+  font-size: x-large;
+}
+
+/* iframe con el mapa de Google */
+.north-map {
+  position: relative;
+  top: 67px; /* 646   910  */
+  left: 51px;
+  width: 328px;
+  height: 205px;
+}
+
+/* aparato tom tom 
+.navy{
+	position: relative;
+	top: -150px;
+	left: 450px;
+	width: 600px;
+	height: 450px;
+}
+*/
+
+.tomtom {
+  background: url("../img/navigation.jpg");
+  background-repeat: no-repeat;
+  background-size: 430px 340px;
+  position: relative;
+  top: -80px;
+  left: 360px;
+  width: 430px;
+  height: 340px;
+}
+
+/* .content-contact {
+  width: 280px;
+  top: 700px;
+}  */
+
+form {
+  display: block;
+  position: relative;
+  left: 180px;
+  top: 20px;
+  /*  width: 290px;  */
+  border-color: red;
+  align-content: flex-end;
+}
+
+form h3 {
+  color: white;
+  padding-bottom: 10px;
+}
+
+form input {
+  /* ruby-align: right;*/
+  /* align-content: flex-end; */
+
+  /* position: relative; */
+  /* left: 35px; */
+  /* border-color: white; */
+  background-color: #235e3d;
+  color: white;
+  border: 0px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.boto {
+  position: relative;
+  top: 150px;
+  right: -550px;
+  width: 80px;
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  margin-top: 0px;
+
+  float: auto;
+  cursor: pointer;
+  border: outset;
+}
+
+.boto:hover {
+  border: double;
+  background-color: white;
+  color: green;
+}
+
+#fieldset {
+  position: relative;
+  left: -150px;
+  height: 900px;
+  border-radius: 2%;
+  width: 710px;
+}
+
+#fieldset h3 {
+  color: white;
+}
+/* Flexbox debe aplicarse a contenedores, NO a elementos
+.fieldset label{
+	display: flex;
+	align-content: flex-start;
+	padding-left: 40px;
+	width: 90px;
+}  */
+
+.pieza-flex{
+	display: flex;
+	flex-direction: column;
+	/* align-content: space-between; */
+	justify-content: space-between; 
+}
+
+#fieldset input {
+  display: flex;
+  align-content: flex-end;
+}
+
+#chk-uniform{
+
+}
+
+.radio {
+  border-radius: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.preguntas {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.preguntas span {
+  font-style: normal;
+}

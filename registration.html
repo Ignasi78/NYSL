@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NY Soccer League</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <!-- aquí aplicarem els estils -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- aquí enllacem amb JavaScrips -->
+    <!-- <script type="text/javascript" src="./js/test.js"></script> -->
+
+  </head>
+<!-- =================== B O D Y ========================================= -->
+  <body>
+    <section id="global">
+      
+      <!-- capcalera -->
+      <header>
+      	<!-- zona de banner de títol i logotipo -->
+        <div id="logo">          
+          &nbsp;<img src="./img/nysl_logo.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Northside Youth Soccer League</a>              
+        </div>
+        <div class="clearfix"></div>
+        <!-- final de la zona de títol i logo -->
+
+        <!-- barra menus navegació abans era <navbar> pero HTML5 es nav  -->
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="game-info.html">Game info</a></li>            
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="#">Registration</a></li>
+          </ul>
+        </nav>
+      </header>  
+      <!-- final de la capcalera -->
+
+      <!-- slider (home) o banner (demás) -->
+      <div id="slider">
+        <img class="banner" src="./img/campo.jpg" alt="stadium"/>  <!-- width=865 height=250> -->
+        <br>
+        <br>
+      </div>
+      
+      <!-- ============================================================================== -->
+      <!-- contingut de la web    -->
+      <section id="content">
+        <div id="posts-info">
+
+            <!-- articles i contingut a mostrar -->
+            <h2>Registration Sheet</h2>      
+            <br>
+
+          <!-- FORMULARIO ======== -->
+			<div id="formulario">               
+	            <br>
+                <!-- caja per al Formulari d'entrada de dades First Name, Apellido, Direccion, Ciudad, CP, FechaNacim, Tutor, Telf, Mail -->
+              	
+                	<form action="./show_data.html" method="get">
+                		<fieldset id="fieldset" class="pieza-flex">
+                			<!-- <legend> &nbsp; Input data &nbsp;</legend>  -->
+                			
+                			<div id="pieza-espacio" >      <!-- para dejar una línea de espacio en blanco -->
+                				<label> </label>
+                			</div>
+
+                			<div id="pieza-alumno" class="pieza-flex">
+	                			<div id="fila-1" class="horizontal">
+				                    <label for="nom">Player s First Name:</label>
+				                    <input type="text" name="nom" id="nom" maxlength="20" required /><br>
+
+					                <label for="cognoms">Last Name:</label>
+					                <input type="text" name="cognoms" id="cognoms" maxlength="20" required /><br>
+		                    	</div>
+		                    	
+		                    	<div id="fila-2" class="horizontal">
+					                <label for="adreca">Street Address:</label>
+					                <input type="text" name="adreca" id="adreca" maxlength="20" required />
+			                	</div>
+			                	
+			                	<div id="fila-3" class="horizontal">
+					                <label for="ciutat">City:</label>
+					                <input type="text" name="ciutat" id="ciutat" maxlength="20" required /><br>
+
+					                <label for="codi">Zip Code:</label>
+					                <input type="text" name="codi" id="codi" maxlength="5" required /><br>		                		
+			                	</div>
+			                	
+			                	<div id="fila-4" class="horizontal">
+					                <label for="naixement">Birth date:</label>
+					                <input type="datetime-local" name="naixement" id="naixement" required /><br>
+
+					                <label for="gender">Gender:</label>
+					                <input class="radio" type="radio" name="gender" id="gender" value="female">&nbsp;Female
+					                <input class="radio" type="radio" name="gender" id="gender2" value="male">&nbsp;Male <br>				
+								</div>			                 
+
+								<div id="fila-5" class="horizontal">
+									<label>Grade:</label>
+									<select name="grade">
+					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
+					                	<option value="pre">Pre-school</option>
+					                	<option value="1st">1 st</option>
+					                	<option value="2nd">2 st</option>
+					                	<option value="3rd">3 st</option>
+					                	<option value="4th">4 th</option>
+					                	<option value="5th">5 th</option>	
+					                </select><br>
+					            </div>
+
+								<!-- <div class="horizontal">
+									<label for="grade">Grade:</label>
+					                <input type="checkbox" name="grade" value="pre" unchecked>Pre-school&nbsp;
+					                <input type="checkbox" name="grade" value="1st" unchecked>1st&nbsp;				                
+					                <input type="checkbox" name="grade" value="2nd" unchecked>2nd&nbsp;
+					                <input type="checkbox" name="grade" value="3rd" unchecked>3rd&nbsp;
+					                <input type="checkbox" name="grade" value="4th" unchecked>4th&nbsp;
+					                <input type="checkbox" name="grade" value="5th" unchecked>5th&nbsp;
+								</div>
+								-->
+				                
+			                	<div id="fila-6" class="horizontal">
+			                		<label for="parent">Parent/Guardian:</label>	
+			                		<input type="text" name="parent" id="parent" maxlength="20" required /><br>
+			                	</div>
+				                
+				                <div id="fila-7" class="horizontal">
+					                <label for="telefon">Contact Phone:</label>
+					                <input type="tel" name="telefon" id="telefon" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required /><br>
+					                <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  -->
+
+					                <label for="email">Contact eMail:</label>
+					                <input type="email" name="email" id="email" required />	
+				                </div>
+		                	</div>  
+		                	<!-- FIN de DIV de PIEZA-ALUMNO -->
+
+
+			                <div id="pieza-school" class="pieza-flex">
+
+			                	<div id="fila-8">			                	
+			                		<p class="preguntas">Which elementary schools do you live near?</p>
+			                	</div>
+
+								<div id="fila-9" class="horizontal">
+					                <label for="1stschool">First Closest School:</label>
+					                <select name="1stschool" id="1stschool">
+					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
+					                	<option value="AJ Katzenmaier">AJ Katzenmaier</option>
+					                	<option value="Greenbay">Greenbay</option>
+					                	<option value="Howard A Yeager">Howard A Yeager</option>
+					                	<option value="Marjorie P Hard">Marjorie P Hard</option>
+					                	<option value="North Elementary">North Elementary</option>
+					                	<option value="South Elementary">South Elementary</option>
+					                </select><br>
+					                <label for="2ndschool">Second Closest School:</label>
+					                <select name="2ndschool" id="2ndschool">
+					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
+					                	<option value="AJ Katzenmaier">AJ Katzenmaier</option>
+					                	<option value="Greenbay">Greenbay</option>
+					                	<option value="Howard A Yeager">Howard A Yeager</option>
+					                	<option value="Marjorie P Hard">Marjorie P Hard</option>
+					                	<option value="North Elementary">North Elementary</option>
+					                	<option value="South Elementary">South Elementary</option>
+					                </select><br>
+					            </div>
+					        </div>
+		                	<!-- FIN de DIV de PIEZA-SCHOOL -->
+
+			                <div id="pieza-posicion" class="pieza-flex">
+
+			                	<div id="fila-10">
+									<p class="preguntas">What position(s) do you normaly play?<span>(check all that apply)</span></p>
+								</div>
+					            <div id="fila-11" class="horizontal">
+									<input type="checkbox" name="position1" value="fw">Forward&nbsp;
+					                <input type="checkbox" name="position2" value="df">Defense&nbsp;
+					            </div>
+					            <div id="fila-12" class="horizontal">
+					                <input type="checkbox" name="position3" value="mf">Midfield&nbsp;
+					                <input type="checkbox" name="position4" value="gk">Goalkeeper&nbsp;				                
+								</div>
+							</div>
+		                	<!-- FIN de DIV de PIEZA-POSICION -->
+
+			                <div id="pieza-want" class="pieza-flex">
+
+								<div id="fila-13">
+									<p class="preguntas">What position(s) do you want to play?<span>(check all that apply)</span></p>
+								</div>								
+					            <div id="fila-14" class="horizontal">
+									<input type="checkbox" name="want1" value="fw">Forward&nbsp;
+					                <input type="checkbox" name="want2" value="df">Defense&nbsp;
+					            </div>
+					            <div id="fila-15" class="horizontal">
+					                <input type="checkbox" name="want3" value="mf">Midfield&nbsp;
+					                <input type="checkbox" name="want4" value="gk">Goalkeeper&nbsp;				                
+								</div>
+							</div>
+		                	<!-- FIN de DIV de PIEZA-WANT -->							
+
+			                <div id="pieza-uniforme" class="pieza-flex">
+
+			                	<div id="fila-16" class="horizontal">								
+									<input id="chk-uniform" class="uniform" type="checkbox" name="uniform"> Already have a Uniform
+								</div>
+
+								<div id="fila-17" class="horizontal">
+					                <label for="jersey">Jersey size:</label>
+					                <select name="jersey" id="jersey">
+					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
+					                	<option value="Youth Small">Youth Small</option>
+					                	<option value="Youth Medium">Youth Medium</option>
+					                	<option value="Youth Large">Youth Large</option>
+					                	<option value="Small">Small</option>
+					                	<option value="Medium">Medium</option>
+					                	<option value="Large">Large</option>
+					                	<option value="Extra-Large">Extra-Large</option>
+					                </select><br>
+					                <label for="shorts">Shorts size:</label>
+					                <select name="shorts" id="shorts">
+					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
+					                	<option value="Youth Small">Youth Small</option>
+					                	<option value="Youth Medium">Youth Medium</option>
+					                	<option value="Youth Large">Youth Large</option>
+					                	<option value="Small">Small</option>
+					                	<option value="Medium">Medium</option>
+					                	<option value="Large">Large</option>
+					                	<option value="Extra-Large">Extra-Large</option>
+					                </select><br>
+					            </div>
+					        </div>
+		                	<!-- FIN de DIV de PIEZA-UNIFORME -->							
+
+					        <div id="pieza-pie" class="pieza-flex">
+					            <div id="fila-18">
+						            <p class="preguntas"><span>Permission to Play</span></p>
+						            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+									accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+									employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+									on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+									sponsored activities, which transportation.
+									By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+									cancellation policy and agree to its terms.
+									</p>
+								</div>
+							
+								<div id="fila-19">
+									<div>
+										<label> </label>
+									</div class="horizontal">
+									<div id="fila-20" class="horizontal">
+										<input type="checkbox" name="agree" id="agree" required> Parent/Guardian Agree and Signature 
+										<label> _____________ </label>
+										<label for="date-agree"> Date: </label>
+										<input type="datetime-local" name="date-agree" required />
+									</div>
+									
+								</div>
+							</div>
+		                	<!-- FIN de DIV de PIEZA-PIE -->							
+
+							
+		                    <!-- boton enviar -->		                    
+		                    <input class="boto" type="submit" value=" send form " /><br><br>
+	                    </fieldset>  
+                	</form>
+              	<!-- </div> -->
+
+			<!-- fin de caja FORMULARIO  =====  -->          
+        	</div>
+
+        <!-- fin de caja POSTS  =====  -->          
+        </div>
+
+        <br>      
+
+          
+        
+        <!-- un div perquè netegi els elements flotants -->
+        <div class="clearfix">       
+        </div>
+      </section>
+      <!-- ============================================================================== -->
+
+      <!-- P I E   D E   P A G I N A    -->
+      <footer>
+        Website managed by Ubiqum Code Academy &copy; 2020 all rights reserved 
+      </footer>
+
+    </section>   <!-- de la caja general de marco de página -->
+
+    <br>
+    <br>
+
+  </body>
+
+</html>
