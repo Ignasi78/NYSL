@@ -1,63 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Feedback Sent</title>
+    <meta charset="utf-8">
+    <title>NYSL - Feedback</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <!-- aquí aplicarem els estils -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- aquí enllacem amb JavaScrips -->
+    <!-- <script type="text/javascript" src="./js/test.js"></script> -->
+
 </head>
+
+<!-- =================== B O D Y ========================================= -->
 <body>
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
+  <section id="global">
+        <!-- capcalera -->
+        <header>
+          <!-- zona de banner de títol i logotipo -->
+          <div id="logo">          
+            &nbsp;<img src="./img/nysl_logo.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Northside Youth Soccer League</a>              
+          </div>
+          <div class="clearfix"></div>
+          <!-- final de la zona de títol i logo -->
 
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
-  </tr>
+          <!-- barra menus navegació abans era <navbar> pero HTML5 es nav  -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="rules.html">Rules</a></li>
+              <li><a href="game-info.html">Game info</a></li>            
+              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="#">Registration</a></li>
+            </ul>
+          </nav>
+        </header>  
+        <!-- final de la capcalera -->
 
-<script language="javascript">
-var args = location.search.substr(1).split('&');
-for (var i = 0; i < args.length; ++i) {
-  var parts = args[i].split('=');
-  if (parts != null) {
-    var field = parts[0];
-    var value = parts[1];
-    if (value == null) {
-      value = "null"
-    }
-    else {
-      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-    }
+        <!-- slider (home) o banner (demás) -->
+        <div id="slider">
+          <img class="banner" src="./img/campo.jpg" alt="stadium"/>  <!-- width=865 height=250> -->
+          <br>
+          <br>
+        </div>
+    
+        <!-- ============================================================================== -->
+        <!-- contingut de la web    -->
+        <section id="content">
 
-    document.writeln('<tr><td align="center">' + field + '</td>');
-    document.writeln('<td align="center">' + value + '</td></tr>');
-  }
-}
-</script>
+        <div id="posts-info">
+          <p align=center>&nbsp;</p>
+          <h2>Information has been sent as your feedback:</h2>
+          
+          <!-- <h1 align=center><font size="+1"></font></h1>  -->
 
-<noscript>
-<tr><td>
-<p>You need to turn on Javascript in your browser.</p>
+          <!-- <table border="1" align=center width="226">   -->
 
-<p>In Microsoft Internet Explorer 4 or greater:</p>
-<ul>
-<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
-<li>Click on the "Security" tab.</li>
-<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
-and then click on "Settings...".)</li>
-<li>Under "Active scripting" make sure "Enable" is selected.</li>
-</ul>
+          <table class="taula">
+                <thead>
+                  <tr class="fila-capcelera">
+                    <th class="taula-col1">Form Field</th>
+                    <th class="taula-col4">Field Value</th>
+                  </tr>
+                </thead>
+                <script language="javascript">
+                var args = location.search.substr(1).split('&');
+                for (var i = 0; i < args.length; ++i) {
+                  var parts = args[i].split('=');
+                  if (parts != null) {
+                    var field = parts[0];
+                    var value = parts[1];
+                    if (value == null) {
+                      value = "null"
+                    }
+                    else {
+                      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                    }
 
-<p>In Netscape version 4 or greater:</p>
-<ul>
-<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
-<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
-<li>Click the <b>OK</b> button.</li>
-</ul>
+                    document.writeln('<tr><td align="center">' + field + '</td>');
+                    document.writeln('<td align="center">' + value + '</td></tr>');
+                  }
+                }
+                </script>
 
-</td></tr>
-</noscript>
+                <noscript>
+                <tr><td>
+                <p>You need to turn on Javascript in your browser.</p>
 
-</table>
+                <p>In Microsoft Internet Explorer 4 or greater:</p>
+                <ul>
+                <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                <li>Click on the "Security" tab.</li>
+                <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                and then click on "Settings...".)</li>
+                <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                </ul>
+
+                <p>In Netscape version 4 or greater:</p>
+                <ul>
+                <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                <li>Click the <b>OK</b> button.</li>
+                </ul>
+
+                </td></tr>
+                </noscript>
+                
+          </table>
+
+          <a href="index.html" class="button-more">^ back to Home</a>
+
+        </div>   <!-- fin caja posts-info -->
+
+        <!-- un div perquè netegi els elements flotants -->
+        <div class="clearfix">            
+        </div>
+
+      </section>
+      <!-- ============================================================================== -->
+
+      <!-- P I E   D E   P A G I N A    -->
+      <footer>
+        Website managed by Ubiqum Code Academy &copy; 2020 all rights reserved 
+      </footer>
+      
+  </section>   <!-- de la caja general de marco de página -->
+  
 </body>
 </html>
 

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>NY Soccer League</title>
+    <title>NYSL - Register</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
 
     <!-- aquí aplicarem els estils -->
@@ -61,41 +61,45 @@
               	
                 	<form action="./show_data.html" method="get">
                 		<fieldset id="fieldset" class="pieza-flex">
-                			<!-- <legend> &nbsp; Input data &nbsp;</legend>  -->
+                			<!--  <legend> &nbsp;&nbsp;&nbsp; Input data &nbsp;</legend> -->
                 			
                 			<div id="pieza-espacio" >      <!-- para dejar una línea de espacio en blanco -->
                 				<label> </label>
                 			</div>
 
                 			<div id="pieza-alumno" class="pieza-flex">
-	                			<div id="fila-1" class="horizontal">
+								<div id="fila-0">			                	
+			                		<p class="preguntas">Personal information</p>
+			                	</div>
+	                			<div id="fila-1" class="horizontal ">
 				                    <label for="nom">Player s First Name:</label>
-				                    <input type="text" name="nom" id="nom" maxlength="20" required /><br>
+				                    <input type="text" class="box" name="nom" id="nom" maxlength="20" required />
 
 					                <label for="cognoms">Last Name:</label>
-					                <input type="text" name="cognoms" id="cognoms" maxlength="20" required /><br>
+					                <input type="text" class="box" name="cognoms" id="cognoms" maxlength="20" required />
 		                    	</div>
 		                    	
 		                    	<div id="fila-2" class="horizontal">
 					                <label for="adreca">Street Address:</label>
-					                <input type="text" name="adreca" id="adreca" maxlength="20" required />
+					                <input type="text" class="box" name="adreca" id="adreca" maxlength="20" required />
 			                	</div>
 			                	
 			                	<div id="fila-3" class="horizontal">
 					                <label for="ciutat">City:</label>
-					                <input type="text" name="ciutat" id="ciutat" maxlength="20" required /><br>
+					                <input type="text" class="box" name="ciutat" id="ciutat" maxlength="20" required /><br>
 
 					                <label for="codi">Zip Code:</label>
-					                <input type="text" name="codi" id="codi" maxlength="5" required /><br>		                		
+					                <input type="text" class="box" name="codi" id="codi" maxlength="5" required /><br>		                		
 			                	</div>
 			                	
 			                	<div id="fila-4" class="horizontal">
 					                <label for="naixement">Birth date:</label>
-					                <input type="datetime-local" name="naixement" id="naixement" required /><br>
+					                <input type="date" class="date" name="naixement" id="naixement" required />
 
 					                <label for="gender">Gender:</label>
 					                <input class="radio" type="radio" name="gender" id="gender" value="female">&nbsp;Female
-					                <input class="radio" type="radio" name="gender" id="gender2" value="male">&nbsp;Male <br>				
+									<input class="radio" type="radio" name="gender" id="gender2" value="male">&nbsp;Male	
+									<div><label>&nbsp;&nbsp;&nbsp;&nbsp;</label></div>			
 								</div>			                 
 
 								<div id="fila-5" class="horizontal">
@@ -124,16 +128,16 @@
 				                
 			                	<div id="fila-6" class="horizontal">
 			                		<label for="parent">Parent/Guardian:</label>	
-			                		<input type="text" name="parent" id="parent" maxlength="20" required /><br>
+			                		<input type="text" class="box" name="parent" id="parent" maxlength="20" required /><br>
 			                	</div>
 				                
 				                <div id="fila-7" class="horizontal">
 					                <label for="telefon">Contact Phone:</label>
-					                <input type="tel" name="telefon" id="telefon" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required /><br>
+					                <input type="tel" class="box" name="telefon" id="telefon" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required /><br>
 					                <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  -->
 
 					                <label for="email">Contact eMail:</label>
-					                <input type="email" name="email" id="email" required />	
+					                <input type="email" class="box" name="email" id="email" required />	
 				                </div>
 		                	</div>  
 		                	<!-- FIN de DIV de PIEZA-ALUMNO -->
@@ -147,7 +151,7 @@
 
 								<div id="fila-9" class="horizontal">
 					                <label for="1stschool">First Closest School:</label>
-					                <select name="1stschool" id="1stschool">
+					                <select name="1stschool" id="1stschool" class="box">
 					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
 					                	<option value="AJ Katzenmaier">AJ Katzenmaier</option>
 					                	<option value="Greenbay">Greenbay</option>
@@ -157,7 +161,7 @@
 					                	<option value="South Elementary">South Elementary</option>
 					                </select><br>
 					                <label for="2ndschool">Second Closest School:</label>
-					                <select name="2ndschool" id="2ndschool">
+					                <select name="2ndschool" id="2ndschool" class="box">
 					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
 					                	<option value="AJ Katzenmaier">AJ Katzenmaier</option>
 					                	<option value="Greenbay">Greenbay</option>
@@ -176,12 +180,12 @@
 									<p class="preguntas">What position(s) do you normaly play?<span>(check all that apply)</span></p>
 								</div>
 					            <div id="fila-11" class="horizontal">
-									<input type="checkbox" name="position1" value="fw">Forward&nbsp;
-					                <input type="checkbox" name="position2" value="df">Defense&nbsp;
+									<input type="checkbox" class="chk" name="position1" value="fw">Forward&nbsp;
+					                <input type="checkbox" class="chk" name="position2" value="df">Defense&nbsp;
 					            </div>
 					            <div id="fila-12" class="horizontal">
-					                <input type="checkbox" name="position3" value="mf">Midfield&nbsp;
-					                <input type="checkbox" name="position4" value="gk">Goalkeeper&nbsp;				                
+					                <input type="checkbox" class="chk" name="position3" value="mf">Midfield&nbsp;
+					                <input type="checkbox" class="chk" name="position4" value="gk">Goalkeeper&nbsp;				                
 								</div>
 							</div>
 		                	<!-- FIN de DIV de PIEZA-POSICION -->
@@ -192,12 +196,12 @@
 									<p class="preguntas">What position(s) do you want to play?<span>(check all that apply)</span></p>
 								</div>								
 					            <div id="fila-14" class="horizontal">
-									<input type="checkbox" name="want1" value="fw">Forward&nbsp;
-					                <input type="checkbox" name="want2" value="df">Defense&nbsp;
+									<input type="checkbox" class="chk" name="want1" value="fw">Forward&nbsp;
+					                <input type="checkbox" class="chk" name="want2" value="df">Defense&nbsp;
 					            </div>
 					            <div id="fila-15" class="horizontal">
-					                <input type="checkbox" name="want3" value="mf">Midfield&nbsp;
-					                <input type="checkbox" name="want4" value="gk">Goalkeeper&nbsp;				                
+					                <input type="checkbox" class="chk" name="want3" value="mf">Midfield&nbsp;
+					                <input type="checkbox" class="chk" name="want4" value="gk">Goalkeeper&nbsp;				                
 								</div>
 							</div>
 		                	<!-- FIN de DIV de PIEZA-WANT -->							
@@ -205,12 +209,12 @@
 			                <div id="pieza-uniforme" class="pieza-flex">
 
 			                	<div id="fila-16" class="horizontal">								
-									<input id="chk-uniform" class="uniform" type="checkbox" name="uniform"> Already have a Uniform
+									<input id="chk-uniform" class="preguntas" type="checkbox" name="uniform"> Already have a Uniform
 								</div>
 
 								<div id="fila-17" class="horizontal">
 					                <label for="jersey">Jersey size:</label>
-					                <select name="jersey" id="jersey">
+					                <select name="jersey" id="jersey" class="box">
 					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
 					                	<option value="Youth Small">Youth Small</option>
 					                	<option value="Youth Medium">Youth Medium</option>
@@ -221,7 +225,7 @@
 					                	<option value="Extra-Large">Extra-Large</option>
 					                </select><br>
 					                <label for="shorts">Shorts size:</label>
-					                <select name="shorts" id="shorts">
+					                <select name="shorts" id="shorts" class="box">
 					                	<option value="kindly choose one..." selected>Kindly choose one...</option>
 					                	<option value="Youth Small">Youth Small</option>
 					                	<option value="Youth Medium">Youth Medium</option>
@@ -237,8 +241,8 @@
 
 					        <div id="pieza-pie" class="pieza-flex">
 					            <div id="fila-18">
-						            <p class="preguntas"><span>Permission to Play</span></p>
-						            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+						            <p class="preguntas">Permission to Play</p>
+						            <p id="txt-permission">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
 									accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
 									employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
 									on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
@@ -253,10 +257,10 @@
 										<label> </label>
 									</div class="horizontal">
 									<div id="fila-20" class="horizontal">
-										<input type="checkbox" name="agree" id="agree" required> Parent/Guardian Agree and Signature 
+										<input type="checkbox" class="chk" name="agree" id="agree" required> Parent/Guardian Agree and Signature 
 										<label> _____________ </label>
 										<label for="date-agree"> Date: </label>
-										<input type="datetime-local" name="date-agree" required />
+										<input type="date" class="date" name="date-agree" required />
 									</div>
 									
 								</div>
@@ -265,7 +269,8 @@
 
 							
 		                    <!-- boton enviar -->		                    
-		                    <input class="boto" type="submit" value=" send form " /><br><br>
+							<input class="boto" id="boto-envia" type="submit" value=" send form "/>
+							<input class="boto" id="boto-esborra" type="reset" value=" clear all"/>
 	                    </fieldset>  
                 	</form>
               	<!-- </div> -->

@@ -14,6 +14,41 @@ body {
   background-attachment: fixed;
 }
 
+.box {
+  flex-grow: 1;
+  margin-right: 30px;
+}
+
+#pieza-uniforme{
+  padding-top: 22px;
+  color: yellow;
+  font-family: "Arial Narrow";
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 600px;
+}
+
+.chk{
+  margin: 3px;
+  margin-left: 12px;
+}
+
+#chk-uniform{
+  margin-top: 3px;
+  margin-left: 0px;
+}
+
+select{
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.date{
+  width: 125px;
+}
+
 #global {
   width: 65%;
   margin: 0px auto;
@@ -152,6 +187,9 @@ body {
   color: white;
   padding-right: 10px;
   padding-left: 10px;
+  font-size: medium;
+  font-family: arial;
+  font-style: normal;
 }
 
 #formulario .banner-carta {
@@ -645,22 +683,29 @@ form input {
   padding-right: 10px;
 }
 
-.boto {
+#boto-envia{
+  right: -470px;
+  top: 110px;
+}
+
+#boto-esborra{
+  right: -590px;
+  top: 70px;
+}
+
+.boto{
   position: relative;
-  top: 150px;
-  right: -550px;
   width: 80px;
   padding: 5px;
   display: flex;
   text-align: center;
   margin-top: 0px;
-
   float: auto;
   cursor: pointer;
   border: outset;
 }
 
-.boto:hover {
+.boto:hover{
   border: double;
   background-color: white;
   color: green;
@@ -715,13 +760,15 @@ form input {
 }
 
 .preguntas {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  font-size: 20px;
+  padding-top: 22px;
+  padding-bottom: 2x;
+  color: yellow;
+  font-size: 23px;
+  font-style: italic;
   font-weight: 600px;
 }
 
-.preguntas span {
-  font-style: normal;
+#txt-permission{
+  padding-left: 10px;
+  padding-right: 30px;
 }
